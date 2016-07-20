@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    Silverlight.createObject( 
+    "MyApplication.xap",
+    document.getElementById("silverlightControlHost"),
+    "silverlightControl",
+    {
+        width: "640",
+        height: "480",
+        version: "4.0.50826.0",
+        enableHtmlAccess: true
+    }, 
+    { },
+    null,
+    null
+);
+
+// -- or --
+
+Silverlight.createObjectEx({
+    source: "MyApplication.xap",
+    parentElement: document.getElementById("silverlightControlHost"),
+    id: "silverlightControl",
+    properties: {
+        width: "640",
+        height: "480",
+        version: "4.0.50826.0",
+        enableHtmlAccess: true
+    },
+    events: {}
+});
+  </script>

@@ -1,0 +1,123 @@
+
+<!doctype html>
+<!-- Conditional comment for mobile ie7 blogs.msdn.com/b/iemobile/ -->
+<!--[if IEMobile 7 ]>    <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+<meta charset="utf-8"/>
+<title>Home | deotto studio</title>
+<meta name="description" content=""/>
+<link rel="alternate" type="application/rss+xml" title="Sitemap" href="sitemap.xml"/>
+<!-- Mobile viewport optimization h5bp.com/ad -->
+<meta name="HandheldFriendly" content="True"/>
+<meta name="MobileOptimized" content="320"/>
+<meta name="viewport" content="width=device-width"/>
+<!-- Home screen icon  Mathias Bynens mathiasbynens.be/notes/touch-icons -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png"/>
+<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png"/>
+<link rel="shortcut icon" href="img/l/apple-touch-icon.png"/>
+<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+<meta http-equiv="cleartype" content="on"/>
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="css/style.css"/>
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script>window.jQuery || document.write(unescape("%3Cscript src='js/jquery-1.6.4.min.js'%3E%3C/script%3E"));</script>
+<script src="js/utilities.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+body {
+  background-color: #333;
+  background-image: url(immagini/html/pattern.jpg);
+  background-repeat: repeat;
+}
+</style>
+</head>
+<body class="home" >
+<div id="flashcontent" style="height:100%"> 
+  <!--inizio #alternate (alternativo a flash)-->
+  <div id="alternate" style="height:100%"> 
+    <!--inizio #header-->
+    <div class="header">
+        <div class="fascia-logo"><img src="immagini/html/logo.png" alt="deottostudio"/></div>
+        <div class="fascia-gialla"></div>
+    </div>
+    <div class="content">
+        <div class="fascia-bianca"><a href="http://itunes.com/apps/de8architetti"><img src="immagini/html/testo_download_badge.png" alt="downloadapp-deottostudio"/></a></div>
+    </div>
+    <div class="fascia">
+        <div class="fascia-centrale"></div>
+        <div class="fascia-giallacentrale"></div>
+    </div>
+    <div class="footer">
+        <div class="fascia-footer">
+        <img src="immagini/html/img_deotto.png" alt="deottostudio" class="imgdeotto"/>
+        <a href="http://maps.google.it/maps?q=Via+Portico,+59%2F61,+Orio+Al+Serio,+BG,+Italy&hl=it&sll=45.657417,9.96278&sspn=2.994832,7.13562&oq=VIA+PORTICO+59%2F61+ORIO+AL+SERIO+(BG)+ITALY&hnear=Via+Portico,+59,+Orio+Center,+Bergamo,+Lombardia&t=m&z=16" target="_blank"><img src="immagini/html/via.png" alt="indirizzo-deottostudio"/>
+        <img src="immagini/html/via2.png" alt="indirizzo-deottostudio"/></a>
+        <a href='tel:+39035530050'><img src="immagini/html/tel.png" alt="tel-deottostudio"/></a>
+        <img src="immagini/html/fax.png" alt="fax-deottostudio"/>
+        <a href='mailto:info@deottostudio.com'><img src="immagini/html/mail.png" alt="mail-deottostudio"/></a>
+        </div>
+        <div class="fascia-giallafooter"></div>
+    </div>
+    
+    <!--inizio #content-->
+    
+    
+  </div>
+  <!--fine #alternate--> 
+  
+  <!--flash--> 
+  <script type="text/javascript">
+    var ua=(navigator.userAgent)
+    //if(ua.indexOf("Android")==-1){
+    function swfobjectCallback(e) {
+      if (e.success==true){
+        //flashscaler
+        scale = new FlashScaler("flashcontent",1260,650);
+        $('#flashcontent').css('overflow','hidden');
+      }
+    }
+    var params = {
+      quality: "high",
+      scale: "noscale",
+      wmode: "window",
+      allowScriptAccess: "always",
+      bgcolor:"#333333"
+    };
+    var flashvars = {
+      //dice al flash su che pagina posizionarsi
+      siteXML: "xml/site.xml"
+    };
+    var attributes = {
+      id: "flashmovie",
+      name: "flashmovie"
+      };
+  
+    swfobject.embedSWF("main.swf", "alternate", "100%", "100%", "9.0.0", "expressInstall.swf", flashvars, params, attributes, swfobjectCallback);      
+     //}
+   
+   
+  </script> 
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1516547-69']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  <!--fine flash--> 
+</div>
+
+</body>
+</html>
