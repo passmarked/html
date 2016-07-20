@@ -1,6 +1,6 @@
 {
   "name": "@passmarked/html",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rules related to checking the HTML compatibility of the page",
   "main": "index.js",
   "scripts": {
