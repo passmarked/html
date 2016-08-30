@@ -1,4 +1,4 @@
-# @passmarked/html guides
+# @passmarked/html docs
 
 [Passmarked](http://passmarked.com) is a suite of tests that can be run against any page/website to identify issues with parity to most online tools in one package.
 
