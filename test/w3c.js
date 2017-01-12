@@ -22,7 +22,43 @@ describe('w3c', function(){
             url: 'http://example.com'
 
           },
-          require('../samples/io.co.za.json'),
+          {
+
+            log: {
+
+              entries: [
+
+                {
+
+                  request:  {},
+                  response: {
+
+                    status: 200,
+                    headers: [
+
+                      {
+
+                        name: 'content-type',
+                        value:  'text/html'
+
+                      }
+
+                    ],
+                    content: {
+
+                      text: fs.readFileSync('./samples/io.co.za.html').toString()
+
+                    }
+
+                  }
+
+                }
+
+              ]
+
+            }
+
+          },
           fs.readFileSync('./samples/io.co.za.html').toString());
 
         // use the payload and some results
@@ -57,7 +93,43 @@ describe('w3c', function(){
             url: 'http://example.com'
 
           },
-          require('../samples/loadshed.org.json'),
+          {
+
+            log: {
+
+              entries: [
+
+                {
+
+                  request:  {},
+                  response: {
+
+                    status: 200,
+                    headers: [
+
+                      {
+
+                        name: 'content-type',
+                        value:  'text/html'
+
+                      }
+
+                    ],
+                    content: {
+
+                      text: fs.readFileSync('./samples/loadshed.org.html').toString()
+
+                    }
+
+                  }
+                  
+                }
+
+              ]
+
+            }
+
+          },
           fs.readFileSync('./samples/loadshed.org.html').toString());
 
         // use the payload and some results
@@ -89,6 +161,9 @@ describe('w3c', function(){
       // handle the error output
       it('io.co.za should return rules', function(done) {
 
+        // get the contnet
+        var content = fs.readFileSync('./samples/io.co.za.html').toString();
+
         // create a dummy payload
         payload = passmarked.createPayload(
           {
@@ -96,11 +171,47 @@ describe('w3c', function(){
             url: 'http://example.com'
 
           },
-          require('../samples/io.co.za.json'),
-          fs.readFileSync('./samples/io.co.za.html'));
+          {
+
+            log: {
+
+              entries: [
+
+                {
+
+                  request:  {},
+                  response: {
+
+                    status: 200,
+                    headers: [
+
+                      {
+
+                        name: 'content-type',
+                        value:  'text/html'
+
+                      }
+
+                    ],
+                    content: {
+
+                      text: content
+
+                    }
+
+                  }
+                  
+                }
+
+              ]
+
+            }
+
+          },
+          content);
 
         // use the payload and some results
-        VNU.run(payload, function(err, results){
+        VNU.run(payload, content, function(err, results){
 
           // check for a error
           if(err)
@@ -124,6 +235,9 @@ describe('w3c', function(){
       // handle the error output
       it('loadshed.org should return messages', function(done) {
 
+        // get the contnet
+        var content = fs.readFileSync('./samples/loadshed.org.html').toString();
+
         // create a dummy payload
         payload = passmarked.createPayload(
           {
@@ -131,11 +245,47 @@ describe('w3c', function(){
             url: 'http://example.com'
 
           },
-          require('../samples/loadshed.org.json'),
-          fs.readFileSync('./samples/loadshed.org.html'));
+          {
+
+            log: {
+
+              entries: [
+
+                {
+
+                  request:  {},
+                  response: {
+
+                    status: 200,
+                    headers: [
+
+                      {
+
+                        name: 'content-type',
+                        value:  'text/html'
+
+                      }
+
+                    ],
+                    content: {
+
+                      text: content
+
+                    }
+
+                  }
+                  
+                }
+
+              ]
+
+            }
+
+          },
+          content);
 
         // use the payload and some results
-        VNU.run(payload, function(err, results){
+        VNU.run(payload, content, function(err, results){
 
           // check for a error
           if(err)
